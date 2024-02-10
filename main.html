@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDoList</title>
+    	<!-- link requeridos -->
+	<link href="http://wayf.ucol.mx/ucol_mini.png" rel="image_src">
+	<link href="//www.ucol.mx/cms/img/favicon.ico" type="image/x-icon" rel="icon">
+	<!-- jQuery -->
+	<script src="//www.ucol.mx/cms/beta/js/jquery.min.js"></script> 
+	<!-- Bootstrap y header & footer agregados -->
+	<link href="//www.ucol.mx/cms/headerfooterapp2.css?v=3" rel="stylesheet">
+	<link href="//www.ucol.mx/cms/beta/css/carrusel.css" rel="stylesheet">
+    <style>
+        #contenido {
+            margin-top: 20px;
+        }
+        .error {
+            background-color: #f2dede;
+            color: #a94442;
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        .borrar-tweet {
+            color: white;
+            background-color: red;
+            padding: 5px 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <section class="page-header">
+        <div class="container">
+	        <h1 class="title-ucol">ToDoList</h1>
+	    </div><!--/ Cierra .container /-->
+    </section>
+
+
+    <div>
+        <nav class="navbar navbar-light bg-faded theme-primary pos-f-t">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12 col-lg-12 col-md-12 col-xs-12">
+                        <button class="navbar-toggler hidden-md-up pull-right collapsed" type="button" data-toggle="collapse" data-target="#navbar-header" aria-controls="navbar-header" aria-expanded="false">☰</button>			        <div class="collapse navbar-toggleable-sm" id="navbar-header">
+                            
+                            <a class="navbar-brand" id="logo" href="//www.ucol.mx/">Universidad de Colima</a>
+                            <!-- <span class="home-href"><a href="./"></a></span> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <div id="contenido" class="container">
+            <h1 class="text-center">ToDoList</h1>
+            <div class="row">
+                <div class="col-md-6">
+                    <label for="toDO">Nota:</label>
+                    <form id="formulario">
+                        <textarea id="toDO" class="form-control" rows="3"></textarea>
+                        <input type="submit" class="btn btn-primary mt-3" value="Agregar">
+                    </form>
+                </div>
+                <div class="col-md-6">
+                    <h2 class="mt-3">Mis notas</h2>
+                    <ul id="lista-notas" class="list-group"></ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+<footer class="bd-footer text-muted" role="contentinfo">
+	<div class="container">
+		<div class="row">
+			<div class="col-xl-12 col-lg-12 col-md-12 col-xs-12 center-links">
+				<img src="//www.ucol.mx/cms/beta/img/icon/ubicacion.svg" width="20"> Dirección: Av. Universidad No. 333, Las Víboras; CP 28040 Colima, Colima, México
+			</div>
+			<div class="col-xl-12 col-lg-12 col-md-12 col-xs-12 center-links">
+				© Derechos Reservados 2022-2025 Universidad de Colima
+			</div>
+		</div>
+	</div>
+</footer>
+<script src="js/app.js"></script>
+</body>
+</html>
